@@ -221,6 +221,8 @@ def define_schema(field, name, required_fields=None):
             schema_type = "date"
         elif f == "time":
             schema_type = "time"
+        elif format == "geography":
+            schema_type = "GEOGRAPHY"
         else:
             schema_type = field_type
 
